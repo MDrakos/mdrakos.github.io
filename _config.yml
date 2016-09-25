@@ -7,14 +7,14 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 # User setting
-owner: Mike Drakos
-email: drakos@unbc.ca
-facebook_username: Mike Drakos
-twitter_username: m.drakos
-github_username: mdrakos
-address: 3333 University Way
-  - line: Prince George, BC
-  - line: V2N 4Z9
+owner: "Mike Drakos"
+email: "drakos@unbc.ca"
+facebook_username: "Mike Drakos"
+twitter_username: "m.drakos"
+github_username: "mdrakos"
+address: "3333 University Way"
+  - line: "Prince George, BC"
+  - line: "V2N 4Z9"
   # Feel free to add more lines here 
 telephone:
 copyright:
