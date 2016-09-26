@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Mike Drakos Portfolio"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Mike Drakos"
+description              : "A portfolio website for Mike Drakos, made for CPSC 300 at UNBC"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -77,11 +77,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Mike Drakos"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "I am a 3rd year Computer Science student at UNBC"
+  location         : "Prince George, BC"
+  email            : "drakos@unbc.ca"
   uri              :
   bitbucket        :
   codepen          :
@@ -89,10 +89,10 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "mdrakos"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "m.drakos"
   lastfm           :
   linkedin         :
   pinterest        :
@@ -100,7 +100,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "@mjdrakos"
   vine             :
   weibo            :
   xing             :
