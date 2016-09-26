@@ -1,7 +1,9 @@
 ---
 title: "Portfolio"
 layout: single
-excerpt: "Portfolio"
+excerpt: "Mike Drakos' Portfolio for UNBC CPSC 300"
+header:
+  image: /images/header.jpg
 sitemap: true
 permalink: /portfolio/
 ---

@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Mike Drakos Portfolio"
+title                    : "Mike Drakos"
 title_separator          : "-"
 name                     : "Mike Drakos"
 description              : "A portfolio website for Mike Drakos, made for CPSC 300 at UNBC"

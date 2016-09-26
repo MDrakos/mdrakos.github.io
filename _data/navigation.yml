@@ -3,5 +3,5 @@ main:
   - title: "Sample Navigation Link"
     url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
 
-  - title: "Pages"
+  - title: "Portfolio"
     url: /portfolio/
