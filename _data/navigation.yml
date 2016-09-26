@@ -4,4 +4,4 @@ main:
     url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
 
   - title: "Pages"
-    url: /_pages/portfolio.md
+    url: /portfolio/
