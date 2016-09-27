@@ -9,7 +9,7 @@ gallery:
     alt: "placeholder image 1"
   - image_path: gal2.png
     alt: "placeholder image 2"
-  - image_path: gal.jpg
+  - image_path: gal3.jpg
     alt: "placeholder image 3"
 sitemap: true
 permalink: /aboutme/
