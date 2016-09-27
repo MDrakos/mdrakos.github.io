@@ -5,7 +5,7 @@ excerpt: "OMG Cat"
 header:
   image: "cat1.jpg"
 sitemap: true
-permalink: /portfolio/
+permalink: /aboutme/
 ---
 
 Hi I'm Mike. I am a 3rd year Computer Science student at UNBC in Prince George,
