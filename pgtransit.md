@@ -5,7 +5,7 @@ excerpt: "Mike Drakos' Portfolio for UNBC CPSC 300"
 header:
   image: "header.jpg"
 sitemap: true
-permalink: /portfolio/
+permalink: /pgtransit/
 ---
 
-This is the start of my portfolio page OMG!
+We're working on it OMG!
