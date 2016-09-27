@@ -4,6 +4,13 @@ layout: single
 excerpt: "OMG Cat"
 header:
   image: "cat1.jpg"
+gallery:
+  - image_path: gal1.gif
+    alt: "placeholder image 1"
+  - image_path: gal2.png
+    alt: "placeholder image 2"
+  - image_path: gal.jpg
+    alt: "placeholder image 3"
 sitemap: true
 permalink: /aboutme/
 ---
@@ -20,3 +27,7 @@ I hope to one day be a full time Software Developer.
 
 I will be periodically updating this site as I add more projects to my
 portfolio!
+
+For now, here are some more cats!
+
+{% include gallery caption="This is a cat gallery OMG!" %}
