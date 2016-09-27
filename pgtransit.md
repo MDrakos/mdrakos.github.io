@@ -1,9 +1,9 @@
 ---
-title: "Portfolio"
+title: "PG Transit App"
 layout: single
-excerpt: "Mike Drakos' Portfolio for UNBC CPSC 300"
+excerpt: "Group Project for CPSC 300"
 header:
-  image: "header.jpg"
+  image: "bus.jpg"
 sitemap: true
 permalink: /pgtransit/
 ---
