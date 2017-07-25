@@ -1,9 +1,7 @@
 ---
 title: "About Me"
 layout: single
-excerpt: "OMG Cat"
-header:
-  image: "cat1.jpg"
+excerpt: "About Mike Drakos"
 gallery:
   - image_path: gal1.gif
     alt: "placeholder image 1"
@@ -15,19 +13,20 @@ sitemap: true
 permalink: /aboutme/
 ---
 
-Hi I'm Mike. I am a 3rd year Computer Science student at UNBC in Prince George,
-BC.
+Hi I'm Mike Drakos, currently completing my final courses for a BSc.
+in Computer Science at the University of Northern British Columbia in
+Prince George, BC.
 
-I am building this portfolio website as part of a project for CPSC 300 Software
-Engineering.
+Before finding Computer Science I was working in professional accounting.
+Seeking a challenge, I decided to leave my position and go back to school.
+At first, I found myself interested in Math and Physics but then discovered
+coding. I love the challenge is provides and the satisfaction of building
+something.
 
-Before finding Computer Science I was working in professional accounting. Originally,
-I went back to school for Physics but quickly realized how much I enjoyed coding.
-I hope to one day be a full time Software Developer.
+Currently, I'm doing research on Graphlets for an undergraduate thesis and
+I hope to continue my research after graduation.
 
-I will be periodically updating this site as I add more projects to my
-portfolio!
-
-For now, here are some more cats!
+Aside from school work and projects I'm passionate about web development
+and spend my spare time learning as much as I can about it.
 
 {% include gallery caption="This is a cat gallery OMG!" %}

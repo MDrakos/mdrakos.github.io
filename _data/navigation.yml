@@ -4,10 +4,10 @@ main:
     url: /aboutme/
 
   - title: "Portfolio"
-    url: /portfolio/
+    url: /_portfolio/
 
-  - title: "PG Transit App"
-    url: /pgtransit/
+  - title: "Resume"
+    url: /resume/
 
   - title: "UNBC"
     url: http://www.unbc.ca
