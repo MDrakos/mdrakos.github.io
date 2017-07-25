@@ -12,13 +12,13 @@ sidebar:
     text: "Conceptual and Logical Design. Driver code and data structure implementation"
 gallery:
   - url: chassisv1.png
-    image_path: images/chassisv1.png
+    image_path: chassisv1.png
     alt: "placeholder image 1"
   - url: chassisv2.png
-    image_path: images/chassisv2.png
+    image_path: chassisv2.png
     alt: "placeholder image 2"
   - url: chassisv3.png
-    image_path: images/chassisv3.png
+    image_path: chassisv3.png
     alt: "placeholder image 3"
 ---
 
