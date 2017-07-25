@@ -10,6 +10,7 @@ sidebar:
     text: "Designer and Developer"
   - title: "Responsibilities"
     text: "Conceptual and Logical Design. Driver code and data structure implementation"
+  - title: 
 gallery:
   - url: chassisv1.png
     image_path: chassisv1.png
