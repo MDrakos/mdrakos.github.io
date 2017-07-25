@@ -1,6 +1,8 @@
 ---
 title: "roboMaus"
 excerpt: "3D printed robotic tank"
+header:
+    teaser: roboMaus-teaser.png
 sidebar:
   - title: "Role"
     image: http://placehold.it/350x250
