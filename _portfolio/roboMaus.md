@@ -5,8 +5,8 @@ header:
     teaser: roboMaus-teaser.png
 sidebar:
   - title: "Role"
-    image: http://placehold.it/350x250
-    image_alt: "logo"
+    image: roboMaus-teaser.png
+    image_alt: http://placehold.it/350x250
     text: "Designer, Front-End Developer"
   - title: "Responsibilities"
     text: "Reuters try PR stupid commenters should isn't a business model"
