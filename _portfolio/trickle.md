@@ -2,7 +2,7 @@
 title: "Wireless Trickle Network"
 excerpt: "A wireless trickle network implemented on the SAM4S microcontroller using xbee wireless radios"
 header:
-    teaser: xbee-ant.png
+    teaser: xbee.png
 sidebar:
   - title: "Role"
     image: xbee-ant.png
@@ -18,7 +18,7 @@ gallery:
   - url: xbee-ant.png
     image_path: xbee-ant.png
   - url: xbee.png
-    image: xbee.png
+    image_path: xbee.png
 ---
 
 [Source Code](https://github.com/MDrakos/trickleNetwork)
