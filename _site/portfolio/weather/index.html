@@ -19,7 +19,7 @@
 
 
 
-<title>Wikipedia Viewer - Mike Drakos</title>
+<title>Weather App - Mike Drakos</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="Mike Drakos">
-<meta property="og:title" content="Wikipedia Viewer">
+<meta property="og:title" content="Weather App">
 
 
-  <link rel="canonical" href="https://mdrakos.github.io/portfolio/wikipedia-viewer/">
-  <meta property="og:url" content="https://mdrakos.github.io/portfolio/wikipedia-viewer/">
+  <link rel="canonical" href="https://mdrakos.github.io/portfolio/weather/">
+  <meta property="og:url" content="https://mdrakos.github.io/portfolio/weather/">
 
 
 
-  <meta property="og:description" content="Get a random article or search Wikipedia">
+  <meta property="og:description" content="Get your current weather based on location">
 
 
 
@@ -49,7 +49,7 @@
 
 
 
-  <meta property="og:image" content="https://mdrakos.github.io/images/wiki-th.png">
+  <meta property="og:image" content="https://mdrakos.github.io/images/weather-th1.png">
 
 
 
@@ -154,7 +154,7 @@
       
         <img src=
         
-          "https://mdrakos.github.io/images/wiki-th.png"
+          "https://mdrakos.github.io/images/weather-th2.png"
         
         alt="http://placehold.it/350x250">
       
@@ -164,7 +164,7 @@
     
       
       <h3>Responsibilities</h3>
-      <p>Build webpage using HTML, CSS, Javascript and jQuery. Work with Wikipedia API</p>
+      <p>Build webpage using HTML, CSS, Javascript and jQuery. Work with DarkSkies API</p>
 
     
     
@@ -173,62 +173,45 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Wikipedia Viewer">
-    <meta itemprop="description" content="Get a random article or search Wikipedia">
+    <meta itemprop="headline" content="Weather App">
+    <meta itemprop="description" content="Get your current weather based on location">
     <meta itemprop="datePublished" content="July 25, 2017">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Wikipedia Viewer
+          <h1 class="page__title" itemprop="headline">Weather App
 </h1>
           
         </header>
       
 
       <section class="page__content" itemprop="text">
-        <p><a href="https://mdrakos.github.io/wikipedia-viewer/">Demo</a></p>
+        <p><a href="https://mdrakos.github.io/weather-app/">Demo</a></p>
 
-<p><a href="https://github.com/MDrakos/wikipedia-viewer">Source Code</a></p>
+<p><a href="https://github.com/MDrakos/weather-app">Source Code</a></p>
 
 <p>This project is part of the progression on <a href="http://www.freecodecamp.com">FreeCodeCamp</a>.</p>
 
-<p>Building this website helped me become more comfortable with jQuery.</p>
+<p>Building this website helped me become more comfortable with jQuery and APIs.</p>
 
-<p>The use of jQuery in this website is fairly straightforward. Most of the
-heavy lifting is done by the search function which is called when the enter
-key is pressed (via keycode=13).</p>
+<p>When first visiting the site you will be asked to allow use of your location.
+Once approved we show the coordinates and use a method to make a call to
+the DarkSkies API.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$('#search').keyup(function (e) {
-   if (e.which === 13) {
-     search();
-   } ...
-</code></pre>
-</div>
+<p>With the data received, again in JSON format, we use other methods to get
+summary, temperature, and icon information.</p>
 
-<p>At this point we make an ajax call to the Wikipedia API and append
-whatever was typed in the search bar. The data we receive back is in
-the JSON format and we store that in an array.</p>
+<p>The icon information is interesting. There are a limited number of icon
+values returned from the API and based on what value is returned we can
+render and animated weather element using CSS. (Credit to Josh Bader
+for his <a href="https://codepen.io/joshbader/pen/EjXgqr">wonderful icons</a>)</p>
 
-<p>Finally we loop through the results array and append well elements for
-each result we have received via jQuery.</p>
+<p>Finally, a button at the bottom represents the current units and clicking
+it does a quick conversion to either celsius or fahrenheit.</p>
 
-<p><code class="highlighter-rouge">
-for (var result in received) {
-  results.push(new Result(received[result].title, received[result].snippet));
-  html = '&lt;div id="articles" class="well"&gt;&lt;a href="https://en.wikipedia.org/wiki/' +
-  received[result].title + '"target="_blank"&gt;&lt;h3&gt;' + received[result].title +
-  '&lt;/h3&gt;&lt;p&gt;' + received[result].snippet + '&lt;/p&gt;&lt;/a&gt;&lt;/div&gt;';
-  $('.results').append(html);
-}
-</code></p>
-
-<p>The source code itself is fairly small. Check it out in the link above.</p>
-
-<p>Everytime you build a new website your skills in HTML, CSS, and JS improve.
-This project also gave me an opportunity to explor jQuery and APIs a little
-more.</p>
+<p>This website furthered my exploration of jQuery and APIs.</p>
 
         
       </section>
@@ -252,13 +235,13 @@ more.</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Wikipedia Viewer https://mdrakos.github.io/portfolio/wikipedia-viewer/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Weather App https://mdrakos.github.io/portfolio/weather/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://mdrakos.github.io/portfolio/wikipedia-viewer/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://mdrakos.github.io/portfolio/weather/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://mdrakos.github.io/portfolio/wikipedia-viewer/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://mdrakos.github.io/portfolio/weather/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://mdrakos.github.io/portfolio/wikipedia-viewer/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://mdrakos.github.io/portfolio/weather/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -267,11 +250,12 @@ more.</p>
 
   <nav class="pagination">
     
-      <a href="https://mdrakos.github.io/portfolio/weather/" class="pagination--pager" title="Weather App
+      <a href="https://mdrakos.github.io/portfolio/roboMaus/" class="pagination--pager" title="roboMaus
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="https://mdrakos.github.io/portfolio/wikipedia-viewer/" class="pagination--pager" title="Wikipedia Viewer
+">Next</a>
     
   </nav>
 
