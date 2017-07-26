@@ -54,7 +54,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2017-07-25T20:02:28-07:00">
+  <meta property="article:published_time" content="2017-07-25T20:19:32-07:00">
 
 
 
@@ -188,12 +188,47 @@
       
 
       <section class="page__content" itemprop="text">
-        <p><a href="https://github.com/MDrakos/wikipedia-viewer">Source Code</a></p>
+        <p><a href="https://mdrakos.github.io/wikipedia-viewer/">Demo</a></p>
+
+<p><a href="https://github.com/MDrakos/wikipedia-viewer">Source Code</a></p>
 
 <p>This project is part of the progression on <a href="http://www.freecodecamp.com">FreeCodeCamp</a>.</p>
 
-<p>Building this website helped me become more comfortable with jQuery.
-Everytime you build a new website your skills in HTML, CSS, and JS improve.</p>
+<p>Building this website helped me become more comfortable with jQuery.</p>
+
+<p>The use of jQuery in this website is fairly straightforward. Most of the
+heavy lifting is done by the search function which is called when the enter
+key is pressed (via keycode=13).</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$('#search').keyup(function (e) {
+           if (e.which === 13) {
+             search();
+           }
+</code></pre>
+</div>
+
+<p>At this point we make an ajax call to the Wikipedia API and append
+whatever was typed in the search bar. The data we receive back is in
+the JSON format and we store that in an array.</p>
+
+<p>Finally we loop through the results array and append well elements for
+each result we have received via jQuery.</p>
+
+<p><code class="highlighter-rouge">
+for (var result in received) {
+                  results.push(new Result(received[result].title, received[result].snippet));
+                  html = '&lt;div id="articles" class="well"&gt;&lt;a href="https://en.wikipedia.org/wiki/' +
+                  received[result].title + '"target="_blank"&gt;&lt;h3&gt;' + received[result].title +
+                  '&lt;/h3&gt;&lt;p&gt;' + received[result].snippet + '&lt;/p&gt;&lt;/a&gt;&lt;/div&gt;';
+                  $('.results').append(html);
+                }
+</code></p>
+
+<p>The source code itself is fairly small. Check it out in the link above.</p>
+
+<p>Everytime you build a new website your skills in HTML, CSS, and JS improve.
+This project also gave me an opportunity to explor jQuery and APIs a little
+more.</p>
 
         
       </section>
@@ -206,7 +241,7 @@ Everytime you build a new website your skills in HTML, CSS, and JS improve.</p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-07-25T20:02:28-07:00">July 25, 2017</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-07-25T20:19:32-07:00">July 25, 2017</time></p>
         
       </footer>
 
