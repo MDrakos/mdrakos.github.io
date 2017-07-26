@@ -54,7 +54,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2017-07-25T20:27:21-07:00">
+  <meta property="article:published_time" content="2017-07-25T20:28:47-07:00">
 
 
 
@@ -201,9 +201,9 @@ heavy lifting is done by the search function which is called when the enter
 key is pressed (via keycode=13).</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>$('#search').keyup(function (e) {
-           if (e.which === 13) {
-             search();
-           }
+   if (e.which === 13) {
+     search();
+   } ...
 </code></pre>
 </div>
 
@@ -216,12 +216,12 @@ each result we have received via jQuery.</p>
 
 <p><code class="highlighter-rouge">
 for (var result in received) {
-                  results.push(new Result(received[result].title, received[result].snippet));
-                  html = '&lt;div id="articles" class="well"&gt;&lt;a href="https://en.wikipedia.org/wiki/' +
-                  received[result].title + '"target="_blank"&gt;&lt;h3&gt;' + received[result].title +
-                  '&lt;/h3&gt;&lt;p&gt;' + received[result].snippet + '&lt;/p&gt;&lt;/a&gt;&lt;/div&gt;';
-                  $('.results').append(html);
-                }
+  results.push(new Result(received[result].title, received[result].snippet));
+  html = '&lt;div id="articles" class="well"&gt;&lt;a href="https://en.wikipedia.org/wiki/' +
+  received[result].title + '"target="_blank"&gt;&lt;h3&gt;' + received[result].title +
+  '&lt;/h3&gt;&lt;p&gt;' + received[result].snippet + '&lt;/p&gt;&lt;/a&gt;&lt;/div&gt;';
+  $('.results').append(html);
+}
 </code></p>
 
 <p>The source code itself is fairly small. Check it out in the link above.</p>
@@ -241,7 +241,7 @@ more.</p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-07-25T20:27:21-07:00">July 25, 2017</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-07-25T20:28:47-07:00">July 25, 2017</time></p>
         
       </footer>
 
