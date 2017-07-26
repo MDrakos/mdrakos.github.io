@@ -36,6 +36,8 @@ gallery:
 
 [Source Code](https://github.com/MDrakos/RoboMAUS)
 
+[Video Demo](https://www.youtube.com/watch?v=7UpjE0antww)
+
 The roboMaus project was used to explore hardware programming,
 data structures, and concurrency.
 
