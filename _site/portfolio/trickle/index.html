@@ -1,0 +1,397 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Wireless Trickle Network - Mike Drakos</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Mike Drakos">
+<meta property="og:title" content="Wireless Trickle Network">
+
+
+  <link rel="canonical" href="https://mdrakos.github.io/portfolio/trickle/">
+  <meta property="og:url" content="https://mdrakos.github.io/portfolio/trickle/">
+
+
+
+  <meta property="og:description" content="A wireless trickle network implemented on the SAM4S microcontroller using xbee wireless radios">
+
+
+
+
+
+  
+
+  
+
+
+
+  <meta property="og:image" content="https://mdrakos.github.io/images/xbee-ant.png">
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2017-07-26T10:44:46-07:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Mike Drakos",
+      "url" : "https://mdrakos.github.io",
+      "sameAs" : ["https://twitter.com/mjdrakos","https://instagram.com/m.drakos"]
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://mdrakos.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Mike Drakos Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://mdrakos.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://mdrakos.github.io/">Mike Drakos</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://mdrakos.github.io/aboutme/">About Me</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://mdrakos.github.io/portfolio/">Portfolio</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://mdrakos.github.io/resume/">Resume</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://www.unbc.ca">UNBC</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+        <img src=
+        
+          "https://mdrakos.github.io/images/xbee-ant.png"
+        
+        alt="http://placehold.it/350x250">
+      
+      <h3>Role</h3>
+      <p>Developer</p>
+
+    
+      
+      <h3>Responsibilities</h3>
+      <p>Implement trickle algorithm, troubleshoot wireless communication</p>
+
+    
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Wireless Trickle Network">
+    <meta itemprop="description" content="A wireless trickle network implemented on the SAM4S microcontroller using xbee wireless radios">
+    <meta itemprop="datePublished" content="July 26, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Wireless Trickle Network
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p><a href="https://github.com/MDrakos/trickleNetwork">Source Code</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=FVWkvPiDZ3Y&amp;feature=youtu.be">Video Demo (excuse the cheesy music and sound effects)</a></p>
+
+<p>The objective of this project was to use a series of SAM4S microcontrollers
+with Xbee wireless radios attached to each to act as nodes in a wireless
+communication network.</p>
+
+<p>Each node, except for the ‘seed’ node, begins in a state of simply
+listening for a signal from a specific node. When that signal is
+received it maintains it’s listening state, but also transmits a signal
+of its own to another specific node. This propagates throughout the
+network until each node is both receiving and sending. If the
+communication chain is broken all nodes after where the break occurs
+stop sending until a signal is again received at the break.</p>
+
+<p>The seed node begins in an inactive state and is primed via a button
+push. Once instigated the seed node will continuously send information
+to the next node in line until it is told to stop.</p>
+
+<h3 id="hardware">Hardware</h3>
+<p>The main hardware used for this project:</p>
+
+<p><em>SAM4SD32 Microcontroller</em></p>
+
+<p><img src="/images/sam4s.png" height="250" width="300" /></p>
+
+<ul>
+  <li>This is the brain of the project.</li>
+  <li>Code is flashed and stored on the ROM</li>
+  <li>Extension pins allow for connection to all other hardware components</li>
+</ul>
+
+<p><em>ATMEL OLED1 Xplained Pro</em></p>
+
+<p><img src="/images/oled.png" height="250" width="300" /></p>
+
+<ul>
+  <li>Used to initialize the program via a button push</li>
+  <li>Display statistics (number of rotations) on OLED display</li>
+</ul>
+
+<p><em>Xbee Wireless Radio</em></p>
+
+<p><img src="/images/xbee-ant.png" height="250" width="300" /></p>
+
+<ul>
+  <li>Xbee RF modules for easy deployment and connectivity</li>
+  <li>Configured using XCTU software</li>
+  <li>Configured so each module would accept packets from a specific broadcast address</li>
+</ul>
+
+<h3 id="implementation">Implementation</h3>
+<p>Once a packet was received from the correct node the one of the LEDs on
+the SAM4S was set to blink. The blink timing depended on the RSSI signal
+strength received from the sending node. The closer the node, the faster
+the blink. Similarly, the OLED screen on the Xplained Pro extension was
+configured to display the actual RSSI value, though this proved to be
+inconsistent.</p>
+
+<h3 id="challenges">Challenges</h3>
+<p>Troubleshooting wireless communication proved to be difficult. In some
+cases a signal would be received when no signal was sent and, more commonly,
+a signal sent with no acknowledgement of being received. Trying to track
+down and pin point what was causing this errors simply came down to
+trial and error in many cases.</p>
+
+<p>We were not able to solve why our OLED display gave us strange and
+inconsistent RSSI values. These discrepancies could have been from a
+wireless communication error or a bug in our code that we weren’t able
+to track down.</p>
+
+<p>An issue arose with our wiring for connecting the Xbees to the SAM4S.
+The wires we manufactured worked, however they were the wrong size for
+the extensions on the SAM4S, this led to some wires contacting each
+other, which caused odd behaviour. After troubleshooting wireless
+communication issues a decision was made to manufacture new wires for
+the nodes that were giving us trouble, this time ensuring proper shielding
+on the end connections.</p>
+
+<h3 id="thanks">Thanks</h3>
+<p>A huge part of this project is built on top of MiniOS, an operating system
+built for the SAM4S micro controller by <a href="http://embedntks.com/author/romanot/">Rafael Roman Otero</a></p>
+
+<p><em>Gallery</em></p>
+
+<figure class="third ">
+  
+    
+      <a href="https://mdrakos.github.io/images/sam4s.png">
+        <img src="https://mdrakos.github.io/images/sam4s.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://mdrakos.github.io/images/oled.png">
+        <img src="https://mdrakos.github.io/images/oled.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://mdrakos.github.io/images/xbee-ant.png">
+        <img src="https://mdrakos.github.io/images/xbee-ant.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://mdrakos.github.io/images/xbee.png">
+        <img src="https://mdrakos.github.io/images/" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>Trickle Network Gallery
+</figcaption>
+  
+</figure>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-07-26T10:44:46-07:00">July 26, 2017</time></p>
+        
+      </footer>
+
+      
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Wireless Trickle Network https://mdrakos.github.io/portfolio/trickle/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://mdrakos.github.io/portfolio/trickle/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://mdrakos.github.io/portfolio/trickle/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://mdrakos.github.io/portfolio/trickle/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="https://mdrakos.github.io/portfolio/roboMaus/" class="pagination--pager" title="roboMaus
+">Previous</a>
+    
+    
+      <a href="https://mdrakos.github.io/portfolio/weather/" class="pagination--pager" title="Weather App
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/mdrakos"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://mdrakos.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 Mike Drakos. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    <script src="https://mdrakos.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
