@@ -9,9 +9,20 @@ sidebar:
     image_alt: http://placehold.it/350x250
     text: "Designer and Developer"
   - title: "Responsibilities"
-    text: "Conceptual and Logical Design. Driver code and data structure implementation"
-  - title: 
+    text: "Logical Design. Drivers, data structures, and concurrency"
 gallery:
+  - url: sam4s.png
+    image_path: sam4s.png
+  - url: oled.png
+    image_path: oled.png
+  - url: hbridge.png
+    image_path: hbridge.png
+  - url: hall-sensor.png
+    image_path: hall-sensor.png
+  - url: motor.png
+    image_path: motor.png
+  - url: treads.png
+    image_path: treads.png
   - url: chassisv1.png
     image_path: chassisv1.png
     alt: "placeholder image 1"
@@ -23,46 +34,75 @@ gallery:
     alt: "placeholder image 3"
 ---
 
+[Source Code](https://github.com/MDrakos/RoboMAUS)
+
 The roboMaus project was used to explore hardware programming,
 data structures, and concurrency.
 
 The idea was to see if independent treads of a tank could be controlled
 via software rather than a gear system. In order to implement and test
 this idea our team had to develop hardware drivers for each physical
-component and software to populate data structures with path information and
+component, software to populate data structures with path information and
 facilitate communication amongst the hardware components.
 
 ### Hardware
 The main hardware used for this project:
 
-- SAM4SD32 Microcontroller
-    - This is the brain of the project.
-    - Code is flashed and stored on the ROM
-    - Extension pins allow for connection to all other hardware components
-- ATMEL OLED1 Xplained Pro
-    - Used to initialize the program via a button push
-    - Display statistics (number of rotations) on OLED display
-- L298 H-Bridge Dual Bidirectional Motor Driver
-    - Allows for bidirectional independent control of two electric motors
+*SAM4SD32 Microcontroller*
+
+<img src="/images/sam4s.png" height="250" width="300">
+
+- This is the brain of the project.
+- Code is flashed and stored on the ROM
+- Extension pins allow for connection to all other hardware components
+
+
+*ATMEL OLED1 Xplained Pro*
+
+<img src="/images/oled.png" height="250" width="300">
+
+- Used to initialize the program via a button push
+- Display statistics (number of rotations) on OLED display
+
+
+*L298 H-Bridge Dual Bidirectional Motor Driver*
+
+<img src="/images/hbridge.png" height="250" width="300">
+
+- Allows for bidirectional independent control of two electric motors
 - Track and wheel kit
-- Hall effect sensors
-    - Used to measure distance by counting wheel rotations
-- Battery Pack
+
+*Hall effect sensors*
+
+<img src="/images/hall-sensor.png" height="250" width="300">
+
+- Used to measure distance by counting wheel rotations
+
+*Motors*
+
+<img src="/images/motor.png" height="250" width="300">
+
+*Treads*
+
+<img src="/images/treads.png" height="250" width="300">
+
+*Battery Pack*
+- For power
 
 The chassis was an opportunity to explore 3D printing. Two prototypes were
 developed before the final chassis.
 
-Chassis Version 1
+*Chassis Version 1*
 
-<img src="/images/chassisv1.png" height="450" width="600">
+<img src="/images/chassisv1.png" height="350" width="500">
 
-Chassis Version 2
+*Chassis Version 2*
 
-<img src="/images/chassisv2.png" height="450" width="600">
+<img src="/images/chassisv2.png" height="350" width="500">
 
-Final Chassis
+*Final Chassis*
 
-<img src="/images/chassisv3.png" height="450" width="600">
+<img src="/images/chassisv3.png" height="350" width="500">
 
 Theses were all printed using a [Tinkerine DittoPro 3D Printer](https://store.tinkerine.com/products/ditto-pro)
 

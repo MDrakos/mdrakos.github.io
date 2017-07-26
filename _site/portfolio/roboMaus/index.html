@@ -54,7 +54,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2017-07-25T16:17:18-07:00">
+  <meta property="article:published_time" content="2017-07-25T19:44:52-07:00">
 
 
 
@@ -164,12 +164,8 @@
     
       
       <h3>Responsibilities</h3>
-      <p>Conceptual and Logical Design. Driver code and data structure implementation</p>
+      <p>Logical Design. Drivers, data structures, and concurrency</p>
 
-    
-      
-      
-      
     
     
   
@@ -192,60 +188,81 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>The roboMaus project was used to explore hardware programming,
+        <p><a href="https://github.com/MDrakos/RoboMAUS">Source Code</a></p>
+
+<p>The roboMaus project was used to explore hardware programming,
 data structures, and concurrency.</p>
 
 <p>The idea was to see if independent treads of a tank could be controlled
 via software rather than a gear system. In order to implement and test
 this idea our team had to develop hardware drivers for each physical
-component and software to populate data structures with path information and
+component, software to populate data structures with path information and
 facilitate communication amongst the hardware components.</p>
 
 <h3 id="hardware">Hardware</h3>
 <p>The main hardware used for this project:</p>
 
+<p><em>SAM4SD32 Microcontroller</em></p>
+
+<p><img src="/images/sam4s.png" height="250" width="300" /></p>
+
 <ul>
-  <li>SAM4SD32 Microcontroller
-    <ul>
-      <li>This is the brain of the project.</li>
-      <li>Code is flashed and stored on the ROM</li>
-      <li>Extension pins allow for connection to all other hardware components</li>
-    </ul>
-  </li>
-  <li>ATMEL OLED1 Xplained Pro
-    <ul>
-      <li>Used to initialize the program via a button push</li>
-      <li>Display statistics (number of rotations) on OLED display</li>
-    </ul>
-  </li>
-  <li>L298 H-Bridge Dual Bidirectional Motor Driver
-    <ul>
-      <li>Allows for bidirectional independent control of two electric motors</li>
-    </ul>
-  </li>
-  <li>Track and wheel kit</li>
-  <li>Hall effect sensors
-    <ul>
-      <li>Used to measure distance by counting wheel rotations</li>
-    </ul>
-  </li>
-  <li>Battery Pack</li>
+  <li>This is the brain of the project.</li>
+  <li>Code is flashed and stored on the ROM</li>
+  <li>Extension pins allow for connection to all other hardware components</li>
 </ul>
+
+<p><em>ATMEL OLED1 Xplained Pro</em></p>
+
+<p><img src="/images/oled.png" height="250" width="300" /></p>
+
+<ul>
+  <li>Used to initialize the program via a button push</li>
+  <li>Display statistics (number of rotations) on OLED display</li>
+</ul>
+
+<p><em>L298 H-Bridge Dual Bidirectional Motor Driver</em></p>
+
+<p><img src="/images/hbridge.png" height="250" width="300" /></p>
+
+<ul>
+  <li>Allows for bidirectional independent control of two electric motors</li>
+  <li>Track and wheel kit</li>
+</ul>
+
+<p><em>Hall effect sensors</em></p>
+
+<p><img src="/images/hall-sensor.png" height="250" width="300" /></p>
+
+<ul>
+  <li>Used to measure distance by counting wheel rotations</li>
+</ul>
+
+<p><em>Motors</em></p>
+
+<p><img src="/images/motor.png" height="250" width="300" /></p>
+
+<p><em>Treads</em></p>
+
+<p><img src="/images/treads.png" height="250" width="300" /></p>
+
+<p><em>Battery Pack</em>
+- For power</p>
 
 <p>The chassis was an opportunity to explore 3D printing. Two prototypes were
 developed before the final chassis.</p>
 
-<p>Chassis Version 1</p>
+<p><em>Chassis Version 1</em></p>
 
-<p><img src="/images/chassisv1.png" height="450" width="600" /></p>
+<p><img src="/images/chassisv1.png" height="350" width="500" /></p>
 
-<p>Chassis Version 2</p>
+<p><em>Chassis Version 2</em></p>
 
-<p><img src="/images/chassisv2.png" height="450" width="600" /></p>
+<p><img src="/images/chassisv2.png" height="350" width="500" /></p>
 
-<p>Final Chassis</p>
+<p><em>Final Chassis</em></p>
 
-<p><img src="/images/chassisv3.png" height="450" width="600" /></p>
+<p><img src="/images/chassisv3.png" height="350" width="500" /></p>
 
 <p>Theses were all printed using a <a href="https://store.tinkerine.com/products/ditto-pro">Tinkerine DittoPro 3D Printer</a></p>
 
@@ -291,6 +308,42 @@ only using a stack though various other data structures were on our list.</p>
 <figure class="third ">
   
     
+      <a href="https://mdrakos.github.io/images/sam4s.png">
+        <img src="https://mdrakos.github.io/images/sam4s.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://mdrakos.github.io/images/oled.png">
+        <img src="https://mdrakos.github.io/images/oled.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://mdrakos.github.io/images/hbridge.png">
+        <img src="https://mdrakos.github.io/images/hbridge.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://mdrakos.github.io/images/hall-sensor.png">
+        <img src="https://mdrakos.github.io/images/hall-sensor.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://mdrakos.github.io/images/motor.png">
+        <img src="https://mdrakos.github.io/images/motor.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://mdrakos.github.io/images/treads.png">
+        <img src="https://mdrakos.github.io/images/treads.png" alt="" />
+      </a>
+    
+  
+    
       <a href="https://mdrakos.github.io/images/chassisv1.png">
         <img src="https://mdrakos.github.io/images/chassisv1.png" alt="placeholder image 1" />
       </a>
@@ -325,7 +378,7 @@ only using a stack though various other data structures were on our list.</p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-07-25T16:17:18-07:00">July 25, 2017</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-07-25T19:44:52-07:00">July 25, 2017</time></p>
         
       </footer>
 
