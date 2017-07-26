@@ -26,9 +26,9 @@ key is pressed (via keycode=13).
 
 ```
 $('#search').keyup(function (e) {
-           if (e.which === 13) {
-             search();
-           }
+   if (e.which === 13) {
+     search();
+   }
 ```
 
 At this point we make an ajax call to the Wikipedia API and append
@@ -40,12 +40,12 @@ each result we have received via jQuery.
 
 ```
 for (var result in received) {
-                  results.push(new Result(received[result].title, received[result].snippet));
-                  html = '<div id="articles" class="well"><a href="https://en.wikipedia.org/wiki/' +
-                  received[result].title + '"target="_blank"><h3>' + received[result].title +
-                  '</h3><p>' + received[result].snippet + '</p></a></div>';
-                  $('.results').append(html);
-                }
+    results.push(new Result(received[result].title, received[result].snippet));
+    html = '<div id="articles" class="well"><a href="https://en.wikipedia.org/wiki/' +
+    received[result].title + '"target="_blank"><h3>' + received[result].title +
+    '</h3><p>' + received[result].snippet + '</p></a></div>';
+    $('.results').append(html);
+    }
  ```
 
 The source code itself is fairly small. Check it out in the link above.
