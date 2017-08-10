@@ -45,14 +45,14 @@ helped develop the initial schedule and route pages. The initial course
 was my introduction to many new technologies such as JavaScript, Ionic,
 and Angular. Because of my, and my team members', unfamiliarity with
 these technologies, development was slow. By the end of the first course
-we have a usable product, however many ideas and plans were left out
+we had a usable product, however many ideas and plans were left out
 in order to have a working prototype.
 
 During the second course we were able to implement many more features.
 My responsibilities also shifted at this time. I was tasked with sourcing
 our data from PG Transit and making it usable for our purposes.
 
-The transit data is received in a JSON format. We were initially working
+The transit data was received in a JSON format. We were initially working
 with this data as it was received from PG Transit without any modification.
 Since these JSON files are very large, and our app is really just a front
 end, processing times caused the application to hang. For instance, when

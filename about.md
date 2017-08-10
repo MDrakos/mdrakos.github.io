@@ -13,7 +13,7 @@ Prince George, BC.
 Before finding Computer Science I was working in public practice accounting.
 Seeking a challenge, I decided to leave my position and go back to school.
 At first, I found myself interested in Math and Physics but then discovered
-Computer Science. I love the challenge is provides and the satisfaction
+Computer Science. I love the challenge it provides and the satisfaction
 of building something.
 
 Currently, I'm doing research on [graphlets](https://en.wikipedia.org/wiki/Graphlets)
