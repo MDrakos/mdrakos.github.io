@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Design Patterns
+title: Design Patterns - Par
 author_profile: true
 read_time: true
 comments: true
@@ -10,7 +10,7 @@ related: true
 
 Part of my work for an undergraduate thesis is to build an application based on graphlets. This application parses a file to generate a graph then uses the graph to create graphlet degree vectors (GDV) for each node. Once that initial step is completed it uses the GDVs to put together a matrix and perform other statistical analysis.
 
-While writing this application I’ve run into design issues. Initially everything was just methods. I wrote it this way in order to ensure everything was working, at the time I didn’t realize how much extra work I was creating for myself. I’ve refactored all of the code once so I’m using objects and not repeating some code unnecessarily. However, now when I need to add features, like being able to process different types of graphs, (directed, weighted, signed, etc…) I’m having to rewrite base methods with more logic. This work it’s not a very efficient use of my time and overall it’s a bad practice. This is why I’ve picked up a textbook on design patterns.
+While writing this application I’ve run into design issues. Initially everything was just methods. I wrote it this way in order to ensure everything was working; at the time I didn’t realize how much extra work I was creating for myself. I’ve refactored all of the code once so I’m using objects and not repeating some code unnecessarily. However, now when I need to add features, like being able to process different types of graphs, (directed, weighted, signed, etc…) I’m having to rewrite base methods with more logic. This work is not a very efficient use of my time and overall it’s a bad practice. This is why I’ve picked up a textbook on design patterns.
 
 Improving a current application I’m working on is one reason to study design patterns, another is to become a better programmer in general. Designing a program with efficiency, modularity, and reusability in mind is difficult. Modularity is a feature of object oriented programming that makes it great. If we strike a proper balance between specific and general when designing our system we can use our solution again when a similar problem arises.
 
