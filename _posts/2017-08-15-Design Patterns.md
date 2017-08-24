@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Design Patterns - Par
+title: Design Patterns - Part 1
 author_profile: true
 read_time: true
 comments: true
