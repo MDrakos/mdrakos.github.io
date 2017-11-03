@@ -9,5 +9,8 @@ main:
   - title: "Resume"
     url: /resume/
 
+  - title: "Github"
+    url: https://www.github.com/mdrakos
+
   - title: "UNBC"
     url: http://www.unbc.ca
