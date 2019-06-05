@@ -10,7 +10,7 @@ locale                   : "en"
 title                    : "Mike Drakos"
 title_separator          : "-"
 name                     : "Mike Drakos"
-description              : "A portfolio website for Mike Drakos"
+description              : "A corner of the internet to discuss what I've learned"
 url                      : "https://mdrakos.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "mdrakos/mdrakos.github.io"
@@ -68,7 +68,7 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links:
     - "https://twitter.com/mjdrakos"
-    - "https://instagram.com/m.drakos"
+    - "https://instagram.com/mdrakos"
 
 # Analytics
 analytics:
@@ -81,8 +81,8 @@ analytics:
 author:
   name             : "Mike Drakos"
   avatar           : "bio.jpeg"
-  bio              : "Currently completing 4th year Computer Science at the University of Northern BC"
-  location         : "Prince George, BC"
+  bio              : "Software Engineer in Vancouver, BC"
+  location         : "Vancouver, BC"
   email            : "mike.drakos@gmail.com"
   uri              :
   bitbucket        :
@@ -185,6 +185,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
 whitelist:
